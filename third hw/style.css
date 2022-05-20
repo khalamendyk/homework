@@ -16,6 +16,22 @@ body {
    box-sizing: border-box;
 }
 
+h1 {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 36px;
+   line-height: 42px;
+   color: #243D6F;
+
+}
+
+.h1top {
+   width: 100%;
+   margin-bottom: 11.5%;
+   border-bottom: 2px solid #F3F3F3;
+}
+
 .main {
    flex: 1535 0 0;
 }
@@ -116,4 +132,145 @@ body {
 
 .calendar-btn-image-reverse {
    transform: rotate(180deg);
+}
+
+.calendar-day-names {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   padding: 7.512% 0;
+   margin-top: 20px;
+   column-gap: 5px;
+}
+
+.calendar-day-name {
+   flex: 1 0 0;
+   text-align: center;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 26px;
+   color: #FFFFFF;
+   mix-blend-mode: normal;
+   opacity: 0.6;
+}
+
+.calendar-days {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 5px;
+}
+
+.calendar-day {
+   flex: 1 0 13%;
+   box-sizing: border-box;
+   position: relative;
+   padding-top: 21.7%;
+
+}
+
+.calendar-day a {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: transparent;
+   border-radius: 50%;
+   aspect-ratio: 1;
+   list-style: none;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 29px;
+   line-height: 34px;
+   color: #FFFFFF;
+}
+
+.calendar-day a:hover {
+   background: #3C82F9;
+}
+
+.calendar-day-other-month a {
+   color: #a8a8a8;
+}
+
+.main {
+   padding: 83px 6.1%;
+
+}
+
+.time {
+   position: relative;
+   --hour-height: 123px;
+   --time-shift: 155px;
+}
+
+.time__hours {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   z-index: 1;
+   position: relative;
+}
+
+.time__hours li {
+   height: var(--hour-height);
+   border-top: 2px solid #F3F3F3;
+   margin-left: var(--time-shift);
+   box-sizing: border-box;
+}
+
+.time__hours li span {
+   position: absolute;
+   display: block;
+   transform: translate(calc(-1*var(--time-shift)), -50%) translateY(2px);
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 26px;
+   line-height: 30px;
+   color: #A4B0C3;
+}
+
+.time__events {
+   position: absolute;
+   top: 0;
+   right: 0;
+   left: var(--time-shift);
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   z-index: 2;
+}
+
+.time__event {
+   position: absolute;
+   --border-color: #8576ED;
+   --background-color: rgba(133, 118, 237, 0.15);
+   border-left: 6px solid var(--border-color);
+   background: var(--background-color);
+   width: 100%;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.time__events--design {
+   --border-color: #3d83f9;
+   --background-color: rgba(61, 131, 249, 0.15);
+}
+
+.time__event--management {
+   --border-color: #eea57c;
+   --background-color: rgba(238, 165, 124, 0.15);
 }
