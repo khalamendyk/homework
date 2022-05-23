@@ -274,3 +274,72 @@ h1 {
    --border-color: #eea57c;
    --background-color: rgba(238, 165, 124, 0.15);
 }
+
+.event__categories {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 5px;
+
+}
+
+.event__categories p {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 26px;
+   line-height: 30px;
+   color: #FFFFFF;
+}
+
+
+.event__categories--select {
+   flex: 1 0 33%;
+   box-sizing: border-box;
+   position: relative;
+}
+
+.event__categories--finance {
+   background-color: #8576ED;
+   border-radius: 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 80px;
+   margin-right: 28px;
+}
+
+
+.event__categories--management {
+   background-color: #F39946;
+   border-radius: 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.event__categories--design {
+   background-color: #FF467E;
+   border-radius: 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 80px;
+   margin-top: 30px;
+}
+
+.event__categories a {
+   color: #FFFFFF;
+   font-family: 'Roboto', sans-serif;
+   font-size: 22px;
+   text-decoration: none;
+}
+
+.event__categories p {
+   margin-top: 107px;
+   border-top: 2px solid #00000025;
+   box-sizing: border-box;
+   mix-blend-mode: normal;
+}
